@@ -4,7 +4,7 @@ rm(list=ls())
 cat("\014")
 
 #IMPORT
-#The R.csv (which is uploaded in this repository too) contains the needed data. No all columns are needed, so the "NA" indicates which data was actually imported.
+#The timeSeries1_R.csv (which is uploaded in this repository too) contains the needed data. No all columns are needed, so the "NA" indicates which data was actually imported.
 #Real growth rates of the US GDP in percentage
 dgdp <- read.csv(
   "PATH TO timesSeries1_R.csv",
