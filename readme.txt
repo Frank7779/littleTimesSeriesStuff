@@ -5,4 +5,4 @@ The data was taken back in 2016 from Bureau of Economic Analysisi (BEA) for my o
 analysis is needed, feel free to contact me (cause for the code/script it's not that imported I guess).
 
 The data itself is stored in the csv-file called timesSeries1_R.csv.
-The acutal R script imports the data needed from the csv-file, does a calculation, creates time series and plots the relevant results.
+The acutal R script imports the data needed from the csv-file, does a calculation, creates time series and plots the relevant results (and exports them in one pdf-file).
