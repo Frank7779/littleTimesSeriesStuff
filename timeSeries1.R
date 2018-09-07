@@ -1,3 +1,5 @@
+#!/bin/Rscript
+
 #START
 #CLEAR
 rm(list=ls())
