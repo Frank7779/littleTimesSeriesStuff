@@ -7,4 +7,4 @@ analysis is needed, feel free to contact me (cause for the code/script it's not 
 The data itself is stored in the csv-file called timesSeries1_R.csv.
 The first R script (timeSeries1.R) imports the data needed from the csv-file, does one calculation, creates time series and plots them (and exports them in one pdf-file).
 
-More sophisticated code examples (actual time serires analysis etc.) coming soon.
+More sophisticated code examples (actual time series analysis etc.) coming soon.
