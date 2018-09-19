@@ -10,7 +10,7 @@ If more information about the actual data and theoretical framework of this anal
 DATA:
 The data is stored in the csv-file called timesSeries1_R.csv.
 
-R CODE FOR TIME SERIES ANALYSIS:
+ACUTAL R CODE FOR TIME SERIES ANALYSIS:
 This first R script (timeSeries1.R) imports the data needed from the csv-file, does one calculation, creates time series and plots them (aif run via CLI exports them in one pdf-file).
 
 PREVIEW:
