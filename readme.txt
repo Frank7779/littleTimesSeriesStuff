@@ -1,5 +1,5 @@
 INTRODUCTIION
-Once during my years at university (MSc in Economics ... hell yeah) I started to use R instead of software like SPSS etc.
+Once during my years at university (MSc in Economics) I started to use R instead of software like SPSS etc.
 The main benefit of scripting in R for me is the clear arranged structure, the traceability of code and the superb handling of RStudio (my favourtie IDE for R).
 
 BASIC INFO
