@@ -6,7 +6,7 @@ All R-scripts are written in R Studio but can be run cia CLI as well (plots are 
 BASIC INFO
 This repository contains code written in R dealing with time series for the purpose of showing my skills and experience in coding with R.
 The data ifself was taken back in 2016 from Bureau of Economic Analysisi (BEA) for my own economic analysis (marxian theory meets modern data ... I saw you yawning!).
-If more information about the actual data and theoretical framework of this analysis is needed, feel free to contact me (cause for the code it's not that imported I guess).
+If more information about the actual data and theoretical framework of this analysis is needed, feel free to contact me (cause for the code itself it's not that imported I guess).
 
 DATA:
 The data is stored in the csv-file called timesSeries1_R.csv.
