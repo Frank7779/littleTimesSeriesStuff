@@ -14,6 +14,7 @@ The data is stored in the csv-file called timesSeries1_R.csv.
 ACUTAL R CODE FOR TIME SERIES ANALYSIS:
 The first R-script (timeSeries1.R) shows the very basic. It imports the data needed from the csv-file, does one calculation, creates time series and plots them.
 The second R-script (timesSeries2.R) starts with some advanced stuff. It runs a (not quite fitting) simple regression modell and plots the regression line.
+The third R-script is coming soon! Do you like advanced stuff? ;)
 
 PREVIEW:
 More sophisticated code examples (actual time series analysis etc.) coming soon.
