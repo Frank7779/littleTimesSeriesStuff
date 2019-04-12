@@ -1,4 +1,4 @@
-### INTRODUCTIION
+### INTRODUCTION
 
 #### Once during my years at university (MSc in Economics) I started to use R instead of software like SPSS etc. The main benefit of scripting in R for me is the clear arranged structure, the traceability of code and the superb handling of RStudio (my favourtie IDE for R). All R-scripts are written in R Studio but can be run cia CLI as well (plots are exported as pdf).
 
