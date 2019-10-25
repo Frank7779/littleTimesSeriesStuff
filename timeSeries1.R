@@ -6,7 +6,8 @@ rm(list=ls())
 cat("\014")
 
 #IMPORT
-#The timeSeries1_R.csv (which is uploaded in this repository too) contains the needed data. No all columns are needed, so the "NA" indicates which colum was actually imported.
+#The timeSeries1_R.csv (which is uploaded in this repository too) contains the needed data.
+#No all columns are needed, so the "NA" indicates which colum was actually imported.
 #Real growth rates of the US GDP in percentage
 dgdp <- read.csv(
   "PATH TO timesSeries1_R.csv",
@@ -38,7 +39,8 @@ profit_ts <- ts(profit, freq=1, start=1948)
 rate_ts <- ts(rate, freq=1, start=1948)
 
 #PLOTS
-#These following plots are not the basic ones which R can produce. I edited the font (so it goes along with the paper I used them in), colours as well as style of both axes.
+#These following plots are not the basic ones which R can produce.
+#I edited the font (so it goes along with the paper I used them in), colours as well as style of both axes.
 #Profit
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
