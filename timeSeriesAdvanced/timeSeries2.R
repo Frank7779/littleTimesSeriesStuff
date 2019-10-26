@@ -10,19 +10,19 @@ cat("\014")
 #No all columns are needed, so the "NA" indicates which colum was actually imported.
 #Real growth rates of the US GDP in percentage
 dgdp <- read.csv(
-  "PATH TO timesSeries1_R.csv",
+  "PATH TO timesSeries_R.csv",
   header=FALSE,
   colClasses=c(NA, "NULL", "NULL", "NULL", "NULL")
 )
 #Capital (capital stock) in Billion US Dollar
 capital <- read.csv(
-  "PATH TO timesSeries1_R.csv",
+  "PATH TO timesSeries_R.csv",
   header=FALSE,
   colClasses=c("NULL", NA, "NULL", "NULL", "NULL")
 )
 #Profit in Billion US Dollar
 profit <- read.csv(
-  "PATH TO timeSeries1_R.csv",
+  "PATH TO timeSeries_R.csv",
   header=FALSE,
   colClasses=c("NULL", "NULL", "NULL", "NULL", NA)
 )
@@ -53,6 +53,7 @@ dgdp_ts_P <- predict(dgdp_ts_linear, int="c", level = 0.95)
 
 #PLOTS
 #Rate of profit with simple linear regression modell and regression line
+png("PATH profit_rate.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   rate_ts, type="l", col="black", lwd=c(1.5),
@@ -63,8 +64,10 @@ plot(
 lines(ts(rate_ts_P[,1], freq = 1, start = 1948), col = "blue")
 mtext("Rate of profit in percentage", side=2, line=2.5)
 mtext("Year", side=1, line=2.5)
+dev.off()
 
 #DGDP with simple linear regression modell and regression line
+png("PATH TO DGDP.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   dgdp_ts, type="l", col="black", lwd=c(1.5),
@@ -75,5 +78,6 @@ plot(
 lines(ts(dgdp_ts_P[,1], freq = 1, start = 1948), col = "blue")
 mtext("Real growth rate of GDP in percentage", side=2, line=2.5)
 mtext("Year", side=1, line=2.5)
+dev.off()
 
 #END
