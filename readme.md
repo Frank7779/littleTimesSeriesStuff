@@ -5,19 +5,18 @@
 
 ### BASIC INFO
 
-#### This repository contains code written in R dealing with time series for the purpose of showing my skills and experience in coding with R. The data ifself was taken back in 2016 from Bureau of Economic Analysisi (BEA) for my own economic analysis (marxian theory meets modern data ... I saw you yawning!). If more information about the actual data and theoretical framework of this analysis is needed, feel free to contact me (cause for the code itself it's not that imported I guess).
+#### This repository contains code written in R dealing with time series for the purpose of showing my skills and experience in coding with R. The data ifself was taken back in 2016 from Bureau of Economic Analysisi (BEA) for my own economic analysis. If more information about the actual data and theoretical framework of this analysis is needed, feel free to contact me (cause for the code itself it's not that imported I guess).
 
 
 ### DATA
 
-#### The data is stored in the csv-file called timesSeries1_R.csv.
+#### The data is stored in the csv-file called timesSeries_R.csv (avaible in each folder).
 
 
 ### ACUTAL R CODE FOR TIME SERIES ANALYSIS
 
-#### The first R-script (timeSeries1.R) shows the very basic. It imports the data needed from the csv-file, does one calculation, creates time series and plots them.
-#### The second R-script (timesSeries2.R) starts with some advanced stuff. It runs a (not quite fitting) simple regression modell and plots the regression line.
-#### The third R-script is coming soon! Do you like advanced stuff? ;)
+#### timeSeriesBasic: timesSeries1.R basically imports the data needed from the csv-file, does one calculation, creates time series and plots them (saved as png).
+#### timeSeriesAdvanced: timeSeries2.R starts with some advanced stuff. It runs a (not quite fitting) simple regression modell and plots the regression line (plots saved as png).
 
 
 ### PREVIEW
