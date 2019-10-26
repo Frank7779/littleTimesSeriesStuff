@@ -10,19 +10,19 @@ cat("\014")
 #No all columns are needed, so the "NA" indicates which colum was actually imported.
 #Real growth rates of the US GDP in percentage
 dgdp <- read.csv(
-  "PATH TO timesSeries1_R.csv",
+  "PATH TO timesSeries_R.csv",
   header=FALSE,
   colClasses=c(NA, "NULL", "NULL", "NULL", "NULL")
 )
 #Capital (capital stock) in Billion US Dollar
 capital <- read.csv(
-  "PATH TO timesSeries1_R.csv",
+  "PATH TO timesSeries_R.csv",
   header=FALSE,
   colClasses=c("NULL", NA, "NULL", "NULL", "NULL")
 )
 #Profit in Billion US Dollar
 profit <- read.csv(
-  "PATH TO timeSeries1_R.csv",
+  "PATH TO timeSeries_R.csv",
   header=FALSE,
   colClasses=c("NULL", "NULL", "NULL", "NULL", NA)
 )
@@ -42,6 +42,7 @@ rate_ts <- ts(rate, freq=1, start=1948)
 #These following plots are not the basic ones which R can produce.
 #I edited the font (so it goes along with the paper I used them in), colours as well as style of both axes.
 #Profit
+png("PATH TO profit.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   profit_ts, type="l", col="black", lwd=c(1.5),
@@ -51,8 +52,10 @@ plot(
 )
 mtext("Profit in Billion US Dollar", side=2, line=2.5)
 mtext("Year", side=1, line=2.5)
+dev.off()
 
 #Capital
+png("PATH TO capital.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   capital_ts, type="l", col="black", lwd=c(1.5),
@@ -62,8 +65,10 @@ plot(
 )
 mtext("Capital in Billion US Dollar", side=2, line=2.5)
 mtext("Year", side=1, line=2.5)
+dev.off()
 
 #Rate of profit
+png("PATH TO profit_rate.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   rate_ts, type="l", col="black", lwd=c(1.5),
@@ -73,8 +78,10 @@ plot(
 )
 mtext("Rate of profit in percentage", side=2, line=2.5)
 mtext("Year", side=1, line=2.5)
+dev.off()
 
 #DGDP
+png("PATH TO DGDP.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   dgdp_ts, type="l", col="black", lwd=c(1.5),
@@ -84,9 +91,11 @@ plot(
 )
 mtext("Real growth rate of GDP in percentage", side=2, line=2.5)
 mtext("Year", side=1, line=2.5)
+dev.off()
 
 #Comparison of DGDP and rate of profit
 #This plot is slightly different than the previous ones, because it shows to different time series in one plot, so I had to edit three axis instead of just two as usual.
+png("PATH TO DGDB_profit_rate.png", width = 700, height = 432)
 par(mar=c(4, 4, 4, 4), family="serif", ps=12)
 plot(
   rate_ts, type="l", col="black", axes=F, lwd=c(1.5),
@@ -107,5 +116,6 @@ axis(4, ylim=c(-3,9), las=0)
 mtext("Real growth rate of GDP in percentage", side=4, line=2.5)
 mtext("Year", side=1, line=2.5)
 box()
+dev.off()
 
 #END
